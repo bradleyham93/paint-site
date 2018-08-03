@@ -1,0 +1,28 @@
+.header{
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(rgba($color-secondary, .93),rgba($color-secondary, 9.9)),url(../images/paint.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
+  
+  padding: 8rem;
+  padding-top: 4rem;
+  justify-content: center;
+
+
+  &__logo{
+    height: 4.5rem;
+    justify-self: center;
+  }
+
+  &__btn{
+    justify-self: start;
+    align-self: start;
+    margin-top: 2rem;
+  }
+}
