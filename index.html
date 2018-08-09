@@ -8,21 +8,36 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
         <title>nexter &mdash; your home, your freedom</title>
     </head>
-    <body class="container">
+    <body>
 
-        <div class="sidebar">
-            <button class="nav-btn"></button>
+                 <nav class='topNav' id="topNav">
+                                <div class="toggle__topNav" >
+                                    <i class="fa fa-bars hamburger"></i>
+                                    <img src="logo1.png" class="topNav__logo" alt="">
+                                </div>
 
-        </div>
+                                <ul class='topNav__ul' id="topNav__ul">
+                                    <li class='topNav__li'><a href="">Home</a></li>
+                                    <li class='topNav__li'><a href="">About</a></li>
+                                    <li class='topNav__li'><a href="">Testimonials</a></li>
+                                    <li class='topNav__li'><a href="">Contact</a></li>
+                                    <li class='topNav__li'><a href="">About</a></li>
+                                    <li class='logo__li'> <img src="logo1.png" class="topNav__logo" alt=""></li>
+                                </ul>
+                               
+                            </nav>
+
+        <div class="container">
 
         <header class="header">
             <img src="" alt="" class="header__logo">
             <h3 class="heading-3">Professional Painting</h3>
             <h1 class="heading-1">Increase The Value Of Your Property</h1>
-            <button class="btn header__btn">Free Quote</button>       
+            <button class="btn header__btn" id= "myButton">Free Quote</button>       
         </header>
 
      
@@ -246,5 +261,42 @@
                 <li class="nav__item"><a href="" class="nav__link">come work with us</a></li>
             </ul>
         </footer>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+
+            $('.hamburger').click(function(){
+                $('.topNav__ul').toggleClass('active');
+            })
+
+            $(window).on("scroll", function(){
+                    if($(window).scrollTop()){
+                            $('.topNav').addClass('navScroll');
+                          
+                    }else{
+                            $('.topNav').removeClass('navScroll');
+                    }
+            })
+
+            function removeNavScroll(){
+                    var ypos = window.pageYOffset;
+                    var topNav = $('.topNav');
+                    
+                    if(ypos > 2500){
+                        topNav.hide();
+                    }else{
+                        document.getElementById('topNav').style.display = 'block';  
+                    }
+            }
+
+                window.addEventListener("scroll", removeNavScroll);
+
+
+        })
+        </script>
+</div>
     </body>
 </html>

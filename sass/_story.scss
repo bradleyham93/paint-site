@@ -7,7 +7,7 @@
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
     background-size: cover;
-    background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)),url(../img/back.jpg);
+    background-image: linear-gradient(rgba($color-secondary, .5), rgba($color-secondary , .5)),url(../img/jasper.jpg);
     @media only screen and (max-width: $bp-medium){
       grid-column: 1/ -1;
       padding: 6rem;
