@@ -15,11 +15,24 @@ $color-grey-dark-2: #000913;
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
+$title: 'Playfair Display SC';
+
 
 // breakpoints
 $bp-largest: 75em; // 1200 px
 $bp-large: 62.5em; // 1000 px
 $bp-medium: 50em; // 800 px
+
+//margins
+.mt-sm{
+  margin-top: 2rem;
+}
+.mt-md{
+  margin-top: 4rem;
+}
+.mt-lg{
+  margin-top: 6rem;
+}
 
 
 

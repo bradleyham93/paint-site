@@ -29,4 +29,23 @@
     background-color: rgba(#fff,0.05);
     transform: translateY(-3px)
   }
+
+  &__social-media{
+   text-align: center;
+  }
+
+  &__social-media__icon{
+    height:3rem;
+    width: 3rem;
+    margin: 0 .5rem;
+   
+  }
+
+  &__social-media__icon circle{
+    fill: rgb(0, 31, 68);
+  }
+}
+
+.btn--link:hover{
+  background-color: $color-primary-dark
 }

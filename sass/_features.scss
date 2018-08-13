@@ -4,6 +4,7 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+ 
   margin: 15rem 0;
   grid-gap: 6rem;
   
@@ -13,20 +14,23 @@
 
   display:grid;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem;
   align-items: start;
 
     &__icon{
-      fill: $color-primary;
-      height: 4rem;
-      width: 4rem;
+      fill: $color-secondary;
+      height: 5rem;
+      width: 5rem;
       grid-row: 1/ span 2;
-      transform: translatey(-1rem);
+      transform: translatey(-2rem);
     }
 
     &__text{
-      font-size: 1.7rem;
-      
+      font-size: 1.5rem;
+      font-family: $font-primary;
+      font-style: italic;
+
     }
 }
